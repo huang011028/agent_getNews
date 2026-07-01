@@ -1,7 +1,8 @@
 # AI 新闻源配置
 # needs_filter: true 表示综合源，抓取后必须经过 AI 相关性过滤
+# needs_filter: false 表示 AI 垂直源，默认全部视为相关
 sources:
-  # —— AI 垂直源（强相关，推荐）——
+  # ============ AI 垂直媒体（强相关，推荐）============
   - name: 量子位
     type: rss
     url: https://www.qbitai.com/feed
@@ -17,7 +18,204 @@ sources:
     url: https://huggingface.co/blog/feed.xml
     needs_filter: false
 
-  # —— 综合源（需过滤，可选）——
+  - name: 机器之心
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/8d97af31b0de9e48da74558af128a4673d78c9a3.xml
+    needs_filter: false
+
+  - name: 新智元
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/e531a18b21c34cf787b83ab444eef659d7a980de.xml
+    needs_filter: false
+
+  - name: AI科技评论
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/789e5fefb9cc2646ba7b680cb7a88378a34eb7a4.xml
+    needs_filter: false
+
+  - name: AI前线
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/25185b01482da0f485418ecb92e208b4416712fb.xml
+    needs_filter: false
+
+  - name: 夕小瑶科技说
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/64b57d666259aee6bd097e76164e4a8371f0ad04.xml
+    needs_filter: false
+
+  - name: 智东西
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/cfd52b4245ca6119b2fda4ef934832c689028927.xml
+    needs_filter: false
+
+  - name: 量子位AI科技大本营
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/dfd3b5e742e32d8032a445832373191957202bf3.xml
+    needs_filter: false
+
+  - name: 大模型智能
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/bfc6440c1a2443fab9a6bf607137d41db5cd5c93.xml
+    needs_filter: false
+
+  - name: AI寒武纪
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/5903009f48a5e4aa44d8ac941a54fe3aafc3e03c.xml
+    needs_filter: false
+
+  - name: 数字生命卡兹克
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/ff621c3e98d6ae6fceb3397e57441ffc6ea3c17f.xml
+    needs_filter: false
+
+  - name: 硅星人Pro
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/c62ceda9eed269d851802bdbc5f33c4fabbf7462.xml
+    needs_filter: false
+
+  - name: 甲子光年
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/1c4008936645d5c17239d99bba91522cf2bdfa26.xml
+    needs_filter: false
+
+  - name: 乌鸦智能说
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/f21c3e34df9b5fecfda57e2e53512864255ed4cd.xml
+    needs_filter: false
+
+  - name: 机器之心SOTA模型
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/2f520471856d56c7b3a95cd09eb777149b32828a.xml
+    needs_filter: false
+
+  - name: PaperAgent
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/54001ca616dbc4b55d2b25d79d68a70191a0ddf4.xml
+    needs_filter: false
+
+  - name: Datawhale
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/ea0dd8bddfe4fbfb32eaa81a1e1b628d45e97a80.xml
+    needs_filter: false
+
+  # ============ 国内大模型厂商/实验室官方 ============
+  - name: DeepSeek
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/1709da4f538d4ce4fb6d7a8ba1a5a1c297919601.xml
+    needs_filter: false
+
+  - name: 智谱
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/433d2134dca54d80804daf32e8be546155be3300.xml
+    needs_filter: false
+
+  - name: 月之暗面 Kimi
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/c5c43d4bc17bae656763859ed0903bb6314ec6fe.xml
+    needs_filter: false
+
+  - name: 通义大模型
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/4ebee6222ae08705b8aabc9116f0defbcb6b17c6.xml
+    needs_filter: false
+
+  - name: 腾讯混元
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/306ce19a1ca590c9c2df781789e828d1acfa1356.xml
+    needs_filter: false
+
+  - name: MiniMax 稀宇科技
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/00306b171f754d463b28cf83f3ba086ad009b430.xml
+    needs_filter: false
+
+  - name: 字节跳动Seed
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/6efd40bb335d2037f365d284cb5e00f0843e737e.xml
+    needs_filter: false
+
+  - name: 阶跃星辰
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/3e2714d06aa36142e8ed6b3f4e5cf9090a069dd2.xml
+    needs_filter: false
+
+  - name: 百度AI
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/d0767d885e6ba213344fb0c0408c51331e23a994.xml
+    needs_filter: false
+
+  - name: 魔搭ModelScope社区
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/d993a885260f96057b9a4c96212cb2c95bb5054b.xml
+    needs_filter: false
+
+  - name: Jina AI
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/ff2c5468828ebe7236afd6c1d128e219774487c2.xml
+    needs_filter: false
+
+  - name: Dify
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/e46c03a4cb65509e22ab9a8507888a2096319d65.xml
+    needs_filter: false
+
+  # ============ 海外 AI 实验室/工具官方博客 ============
+  - name: Anthropic News
+    type: rss
+    url: https://rsshub.bestblogs.dev/anthropic/news
+    needs_filter: false
+
+  - name: Google DeepMind Blog
+    type: rss
+    url: https://deepmind.com/blog/feed/basic/
+    needs_filter: false
+
+  - name: AI at Meta Blog
+    type: rss
+    url: https://rsshub.bestblogs.dev/meta/ai/blog
+    needs_filter: false
+
+  - name: deeplearning.ai The Batch
+    type: rss
+    url: https://rsshub.bestblogs.dev/deeplearning/the-batch
+    needs_filter: false
+
+  - name: LangChain Blog
+    type: rss
+    url: https://blog.langchain.dev/rss/
+    needs_filter: false
+
+  - name: AWS Machine Learning Blog
+    type: rss
+    url: https://aws.amazon.com/blogs/amazon-ai/feed/
+    needs_filter: false
+
+  - name: Latent Space
+    type: rss
+    url: https://www.latent.space/feed
+    needs_filter: false
+
+  - name: Last Week in AI
+    type: rss
+    url: https://lastweekin.ai/feed/
+    needs_filter: false
+
+  - name: Simon Willison's Weblog
+    type: rss
+    url: https://simonwillison.net/atom/everything/
+    needs_filter: true
+
+  - name: Marcus on AI
+    type: rss
+    url: https://garymarcus.substack.com/feed
+    needs_filter: false
+
+  - name: Databricks Blog
+    type: rss
+    url: https://www.databricks.com/feed
+    needs_filter: true
+
+  # ============ 综合科技源（需 AI 过滤）============
   - name: IT之家
     type: rss
     url: https://www.ithome.com/rss/
@@ -28,6 +226,26 @@ sources:
     url: https://36kr.com/feed
     needs_filter: true
 
+  - name: 爱范儿
+    type: rss
+    url: http://www.ifanr.com/feed
+    needs_filter: true
+
+  - name: 极客公园
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/11ea7163fbea99e2ab9fa2812ac3d179574886cc.xml
+    needs_filter: true
+
+  - name: InfoQ 中文
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/13da94d7eb314b49fa251cb7e8399cae29d772db.xml
+    needs_filter: true
+
+  - name: 海外独角兽
+    type: rss
+    url: https://wechat2rss.bestblogs.dev/feed/7200d3a5e976d231deb1e40ad33745c0e649b029.xml
+    needs_filter: true
+
 # 全局参数
-max_items_per_source: 15   # 每个源最多取几条
+max_items_per_source: 10   # 每个源最多取几条（源变多，适当调低避免单源刷屏）
 recent_hours: 24           # 只保留最近多少小时内的新闻
