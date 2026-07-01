@@ -64,7 +64,7 @@ def render_html(summary: dict) -> str:
     return f"""\
 <div style="max-width:640px;margin:0 auto;font-family:-apple-system,'PingFang SC',sans-serif;color:#222;">
   <h2 style="font-size:20px;">📮 {_esc(lead)}</h2>
-  <ol style="padding-left:22px;font-size:15px;">{briefs}</ol>
+  <ul style="padding-left:22px;font-size:15px;list-style:none;">{briefs}</ul>
   {link_block}
   <p style="color:#999;font-size:12px;margin-top:24px;">— 每日 AI 速报 · {_today_str()} · 自动生成 —</p>
 </div>"""
