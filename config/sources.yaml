@@ -1,0 +1,33 @@
+# AI 新闻源配置
+# needs_filter: true 表示综合源，抓取后必须经过 AI 相关性过滤
+sources:
+  # —— AI 垂直源（强相关，推荐）——
+  - name: 量子位
+    type: rss
+    url: https://www.qbitai.com/feed
+    needs_filter: false
+
+  - name: MIT Tech Review - AI
+    type: rss
+    url: https://www.technologyreview.com/topic/artificial-intelligence/feed
+    needs_filter: false
+
+  - name: Hugging Face Blog
+    type: rss
+    url: https://huggingface.co/blog/feed.xml
+    needs_filter: false
+
+  # —— 综合源（需过滤，可选）——
+  - name: IT之家
+    type: rss
+    url: https://www.ithome.com/rss/
+    needs_filter: true
+
+  - name: 36氪
+    type: rss
+    url: https://36kr.com/feed
+    needs_filter: true
+
+# 全局参数
+max_items_per_source: 15   # 每个源最多取几条
+recent_hours: 24           # 只保留最近多少小时内的新闻

@@ -1,0 +1,32 @@
+# AI 相关性过滤配置
+# 命中任一 include 关键词即视为 AI 相关（不区分大小写）
+include:
+  - AI
+  - 人工智能
+  - 大模型
+  - 机器学习
+  - 深度学习
+  - 神经网络
+  - LLM
+  - GPT
+  - Claude
+  - Gemini
+  - 生成式
+  - AIGC
+  - 大语言模型
+  - Transformer
+  - 多模态
+  - 智能体
+  - Agent
+  - 具身智能
+  - AI 芯片
+  - 算力
+
+# 命中即排除（减少误伤噪声，可按需增删）
+exclude: []
+
+# 过滤策略：
+#   keyword  仅关键词匹配（快、零成本）
+#   semantic 仅大模型语义判断（准、花 token）
+#   hybrid   先关键词粗筛，未命中的再用语义兜底（推荐）
+strategy: hybrid
