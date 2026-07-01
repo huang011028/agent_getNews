@@ -1,6 +1,13 @@
 # 每日 AI 新闻速报 Agent
 
-用 GitHub Actions 定时执行：**抓取新闻 → 筛选 AI 相关 → AI 总结 → 邮件推送**。
+> 每日 AI 新闻自动摘要推送 · GitHub Actions 定时抓取 RSS，用 DeepSeek 大模型总结后邮件发送。
+
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-scheduled-2088FF?logo=githubactions&logoColor=white)
+![LLM](https://img.shields.io/badge/LLM-DeepSeek-6b4fbb)
+![License](https://img.shields.io/badge/license-MIT-green)
+
+用 GitHub Actions 定时执行：**抓取新闻 → 筛选 AI 相关 → AI 总结 → 邮件推送**，零运维、每天自动送达。
 
 > 只关注人工智能 / 大模型 / 机器学习领域，其余主题自动过滤。
 
